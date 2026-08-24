@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "flowbite/plugin";
+
+
+@source "../node_modules/flowbite";
+
+
+@source "./node_modules/preline/dist/*.js";
+@plugin "@tailwindcss/forms";
