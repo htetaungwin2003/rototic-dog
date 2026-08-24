@@ -8,7 +8,8 @@
   </head>
   <body class="bg-[#080B12] text-white">
     <main>
-      <header
+      <div class="sticky top-0 z-50 bg-[#080B12]">
+        <header
         class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full py-3 bg-navbar border-b border-navbar-line"
       >
         <nav
@@ -27,17 +28,17 @@
               class="text-sm font-medium text-primary-active focus:outline-hidden"
               href="#"
               aria-current="page"
-              >Landing</a
+              >Home</a
             >
             <a
               class="text-sm text-navbar-nav-foreground hover:text-primary-hover focus:outline-hidden focus:text-primary-focus"
               href="#"
-              >Account</a
+              >Components</a
             >
             <a
               class="text-sm text-navbar-nav-foreground hover:text-primary-hover focus:outline-hidden focus:text-primary-focus"
               href="#"
-              >Work</a
+              >Control</a
             >
             <a
               class="text-sm text-navbar-nav-foreground hover:text-primary-hover focus:outline-hidden focus:text-primary-focus"
@@ -47,7 +48,8 @@
           </div>
         </nav>
       </header>
-      <div class="mt-5">
+      </div>
+      <div class="mt-">
         <div class="text-xl font-serif font-bold text-center md:text-4xl">
           <h1>WELCOME TO OUR PROJECT</h1>
           <P id="element"></P>
@@ -58,13 +60,13 @@
 <div class="max-w-340 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <!-- Title -->
   <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-    <h2 class="text-2xl font-bold md:text-4xl md:leading-tight text-foreground font-serif">Our Group Member</h2>
+    <h2 class="text-2xl font-bold md:text-4xl md:leading-tight text-foreground font-serif">Our Group Members</h2>
   </div>
   <!-- End Title -->
   <!-- Grid -->
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
-    <div class="text-center">
-      <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+  <div class="grid grid-cols-2 md:grid-cols-2 gap-8 md:gap-12">
+    <div class="text-center h-48">
+      <img class="rounded-xl sm:size-48 lg:size-60 mx-auto object-cover h-full w-full " src="./images/htet.jpg" alt="Avatar">
       <div class="mt-2 sm:mt-4">
         <h3 class="text-sm font-medium text-foreground sm:text-base lg:text-lg">
           Mg Htet Aung Win
@@ -75,41 +77,167 @@
       </div>
     </div>
     <!-- End Col -->
-    <div class="text-center">
-      <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+    <div class="text-center h-48">
+      <img class="rounded-xl sm:size-48 lg:size-60 mx-auto h-full w-full" src="./images/khun.jpg" alt="Avatar">
       <div class="mt-2 sm:mt-4">
         <h3 class="text-sm font-medium text-foreground sm:text-base lg:text-lg">
           Kun Wai Phyo
         </h3>
         <p class="text-xs text-muted-foreground-2 sm:text-sm lg:text-base">
-          5EC-
+          5EC-15
         </p>
       </div>
     </div>
     <!-- End Col -->
-    <div class="text-center">
-      <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+    <div class="text-center h-48 mt-10 md:mt-20">
+      <img class="rounded-xl sm:size-48 lg:size-60 mx-auto h-full w-full" src="./images/htwe.jpg" alt="Avatar">
       <div class="mt-2 sm:mt-4">
         <h3 class="text-sm font-medium text-foreground sm:text-base lg:text-lg">
          Mg Htwe Nadi Shain
         </h3>
         <p class="text-xs text-muted-foreground-2 sm:text-sm lg:text-base">
-          5EC-
+          5EC-19
         </p>
       </div>
     </div>
     <!-- End Col -->
-    <div class="text-center">
-      <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="./images/Km.jpg" alt="Avatar">
+    <div class="text-center h-48 mt-10 md:mt-20">
+      <img class="w-full h-full  rounded-xl sm:size-48 lg:size-60 mx-auto" src="./images/sai.jpg" alt="Avatar">
       <div class="mt-2 sm:mt-4">
         <h3 class="text-sm font-medium text-foreground sm:text-base lg:text-lg">
           Sai Phyo Htet Aung
         </h3>
         <p class="text-xs text-muted-foreground-2 sm:text-sm lg:text-base">
-         5EC-
+         5EC-21
         </p>
       </div>
     </div>
+      </section>
+      <section>
+        <div class="mb-8 mt-15 md:mt-30 container mx-auto px-4">
+          <h1 class="text-xl font-serif md:text-3xl">The Technology Behind the Robot Dog</h1>
+        </div>
+        <div class=" container mx-auto grid grid-cols-2  md:gap-6  md:grid-cols-6">
+        
+        <div class="col-span-1 md:col-span-2  md:w-full card bg-base-100 w-full px-6 py-6 shadow-sm  hover:scale-[1.02]
+        hover:shadow-2xl transition-all duration-300  hover:shadow-white">
+  <figure class="h-48 md:h-60 overflow-hidden">
+    <img
+    class="h-full w-full object-fit rounded"
+      src="./images/esp.jpg"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body mt-3">
+    <h2 class="card-title text-2xl text-[#94A3B8]">ESP32</h2>
+    <p>The brain of the robotic dog , controlling sensors, motors, and smart functions.</p>
+    
+  </div>
+</div>
+
+ <div class="col-span-1 md:col-span-2  md:w-full card bg-base-100  w-full px-6 py-6  hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
+  <figure class="h-48 md:h-60 overflow-hidden">
+    <img
+    class="h-full w-full object-fit rounded "
+      src="./images/images.jpg"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body mt-3">
+    <h2 class="card-title text-2xl text-[#94A3B8] ">ESP32-CAM</h2>
+    <p>A complete camera module for ral-time video streaming and remote monitoring.</p>
+  </div>
+</div>
+
+<div class="col-span-1 md:col-span-2  md:w-full card bg-base-100  w-full  px-6 py-6  mt-10  md:mt-0  hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
+  <figure class="h-48 md:h-60 overflow-hidden" >
+    <img
+     class="h-full w-full object-fit rounded"
+      src="./images/ult.jpg"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body mt-3">
+    <h2 class="card-title  text-2xl text-[#94A3B8]">Ultrasonic Sensor</h2>
+    <p>Detect obstacles and measures distance for safe and smart navigation.</p>
+   
+  </div>
+</div>
+<div class="col-span-1 md:col-span-2  md:w-full card bg-base-100  w-full  px-6 py-6 mt-10  hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
+  <figure class="h-48 md:h-60 overflow-hidden">
+    <img
+     class="h-full w-full object-fit rounded"
+      src="./images/driver.jpg"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body mt-3">
+    <h2 class="card-title text-2xl text-[#94A3B8]">PCA9685</h2>
+    <p>Control multiple servo motors for precise and coordinated movement.</p>
+    
+  </div>
+</div>
+<div class="col-span-1 md:col-span-2  md:w-full card bg-base-100  w-full  px-6 py-6 mt-10  hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
+  <figure class="h-48 md:h-60 overflow-hidden">
+    <img
+    class="h-full w-full object-fit rounded"
+      src="./images/servo.jpg"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body mt-3">
+    <h2 class="card-title text-2xl text-[#94A3B8]"></h2>MG90s
+    <p>Provides precise and reliable movement for the robotic dog's joints.</p>
+    
+  </div>
+</div>
+<div class="col-span-1 md:col-span-2  md:w-full card bg-base-100  w-full  px-6 py-6 mt-10  hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
+  <figure class="h-48 md:h-60 overflow-hidden">
+    <img
+   class="h-full w-full object-fit rounded"
+      src="./images/su03T.jpg"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body mt-3">
+    <h2 class="card-title text-2xl text-[#94A3B8]">SU-03T</h2>
+    <p>Enables voice commands for smart and hands-free robot control.</p>
+    
+  </div>
+</div>
+
+<div class="col-span-1 md:col-span-2  md:w-full card bg-base-100  w-full  px-6 py-6 mt-10 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
+  <figure class="h-48 md:h-60 overflow-hidden">
+    <img
+    class="h-full w-full object-fit rounded "
+      src="./images/xl4016.jpg"
+      alt="Shoes"
+       />
+
+
+  </figure>
+  <div class="card-body mt-3">
+    <h2 class="card-title text-2xl text-[#94A3B8]">XL-4016</h2>
+    <p>Provides stable and adjustable power to the robotic dog's electronic components.</p>
+   
+  </div>
+</div>
+<div class="col-span-1 md:col-span-2  md:w-full card bg-base-100  w-full  px-6 py-6 mt-10 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
+  <figure class="h-48 md:h-60 overflow-hidden">
+    <img
+    class="h-full w-full object-fit rounded "
+      src="./images/lm25.jpg"
+      alt="Shoes"
+       />
+
+
+  </figure>
+  <div class="card-body mt-3">
+    <h2 class="card-title text-2xl text-[#94A3B8]">Card Title</h2>
+    <p>Converts voltage efficiently to provide stable power for electronic components.</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+
+
+      </div>
       </section>
     </main>
     <script type="module" src="/src/main.js"></script>
