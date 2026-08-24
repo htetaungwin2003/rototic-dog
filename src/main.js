@@ -6,7 +6,7 @@ import Robot from './app';
 import Typed from 'typed.js';
 
 const typed = new Typed('#element', {
-  strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+  strings: ['ROBOTIC DOG NAME LOKI'],
   typeSpeed: 50,
 });
 
