@@ -1,16 +1,12 @@
 import './style.css';
 
-import '../node_modules/flowbite/dist/flowbite';
+import 'flowbite';
 
-import '../node_modules/venobox/dist/venobox';
 import 'preline';
 import 'animate.css';
 import Robot from './app';
 import Typed from 'typed.js';
 
-new VenoBox({
-    selector: ".khinM"
-});
 
 const typed = new Typed('#element', {
   strings: ['ROBOTIC DOG NAME LOKI'],
