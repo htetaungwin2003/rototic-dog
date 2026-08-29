@@ -1,4 +1,4 @@
-import { heroVideo } from "./selectors";
+import { heroVideo  } from "./selectors";
 
 const videos = [
 "/videos/videoplayback.mp4",
@@ -24,3 +24,6 @@ export const heroVideoHandler = () => {
     }
     playvideo();
 };
+
+
+

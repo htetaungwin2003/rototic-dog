@@ -1,13 +1,17 @@
 import { nextHandler, preHandler } from "./gallery";
-import { heroVideoHandler } from "./handlers";
+import { heroVideoHandler,   } from "./handlers";
 
-import { heroVideo, nextBtn, preBtn } from "./selectors";
+import { heroVideo, nextBtn, preBtn, sitBtn,  } from "./selectors";
 
 const listener = () => {
 
 preBtn.addEventListener("click",preHandler);
 nextBtn.addEventListener("click",nextHandler);
-heroVideo.addEventListener("ended",heroVideoHandler)
+heroVideo.addEventListener("ended",heroVideoHandler);
+
+
+
+
 
 };
 

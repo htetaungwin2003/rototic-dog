@@ -48,28 +48,28 @@
         </nav>
       </header>
     </div>
-    <div id="home" class="mt-7 relative w-full h-screen ">
-      <div class="   text-xl font-serif font-bold  md:text-3xl 
-      justify-center text-center inset-0 ">
-        <h1>WELCOME TO OUR PROJECT <span id="element"></span> </h1>
+    <div id="home" class="mt-7 relative w-full md:h-[90vh] h-[85vh]  container mx-auto">
+      <div class="text-xl font-serif  md:text-3xl 
+      justify-center text-center inset-0 z-30 text-white font-bold mb-4 overflow-hidden ">
+        <h1>WELCOME TO OUR PROJECT <span id="element"></span></h1>
 
       </div>
-     <video id="heroVideo" class="absolute w-full h-full object-cover object-center z-20" 
+     <video id="heroVideo" class="absolute w-full  h-full object-cover object-center z-20 " 
      autoplay
      muted
      playsinline
      src="public/videos/vd2.mp4"></video>
 
      <a href="#about">
-      <button class="hero-btn opacity-0 border-black active:bg-blue-200 absolute z-40 bg-black px-6 py-4 rounded-xl
-     top-220  left-20 md:top-170 md:left-120"
+      <button class="hero-btn opacity-0 border-black active:bg-[#3a86ff] absolute z-40 bg-black px-6 py-4 rounded-xl
+     top-200  left-20 md:top-150 md:left-120"
      >
       Explore
      </button>
      </a>
      <a href="#video">
-       <button  class="hero-btn opacity-0 border-black active:bg-blue-200 absolute z-40 bg-black px-6 py-4 rounded-xl
-     top-220  right-20 md:top-170 md:right-120"
+       <button  class="hero-btn opacity-0 border-black active:bg-[#3a86ff] absolute z-40 bg-black px-6 py-4 rounded-xl
+     top-200  right-20 md:top-150 md:right-120"
     >
       Watch Video
      </button>
@@ -89,7 +89,7 @@
     </div> -->
     
 
-    <hr class="mt-10">
+    <hr class="mt-15">
 
     <section id="features" class="mt-4 container ">
 
@@ -269,6 +269,33 @@ A Closer Look at Robotic Dog LOKI
 
     </section>
     <hr class="mt-9 ">
+
+   <section id="video" class="mt-4">
+  <div class="container mx-auto">
+    
+    <div class="px-4">
+      <h1 class="text-xl md:text-3xl font-serif">See the Robot in Action</h1>
+      <p class="md:text-2xl font-serif">
+        Explore the robotic dog in action. Select a command and watch how it responds with different movements and behaviors.
+      </p>
+    </div>
+
+   
+    <div class="grid md:grid-cols-2 gap-8 mt-8 items-center px-6">
+      
+<video class="col-span-1 h-100 w-full rounded-2xl" src="./public/videos/htet.mp4" controls></video>
+<video class="col-span-1 h-100 w-full md:object-cover object-contain rounded-2xl" src="./public/videos/vd2.mp4" controls></video>
+<video class="col-span-1 h-100 w-full object-fit rounded-2xl" src="./public/videos/bike.mp4" controls></video>
+<video class="col-span-1 h-100 w-full md:object-cover object-contain object-left rounded-2xl" src="./public/videos/h.mp4" controls></video>
+
+
+
+     
+
+    </div>
+  </div>
+</section>
+    <hr class="mt-9 ">
     <section id="about">
 
       <div class="max-w-340 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -331,6 +358,8 @@ A Closer Look at Robotic Dog LOKI
             </div>
           </div>
     </section>
+
+    
   </main>
   <script type="module" src="/src/main.js"></script>
 </body>
