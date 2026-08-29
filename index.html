@@ -24,91 +24,107 @@
 
 <body class="bg-[#485563] text-white">
   <main>
-    
-      <div class="sticky top-0 z-50 bg-[#080B12] ">
-      <header class=" flex flex-wrap sm:justify-start sm:flex-nowrap w-full py-3 bg-navbar border-b border-navbar-line ">
+
+    <div class="sticky top-0 z-50 bg-[#080B12] ">
+      <header
+        class=" flex flex-wrap sm:justify-start sm:flex-nowrap w-full py-3 bg-navbar border-b border-navbar-line ">
         <nav class="sticky top-0 z-50 max-w-340 w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between ">
           <a class="flex-none font-semibold text-xl text-foreground focus:outline-hidden focus:opacity-80" href="#"
             aria-label="Brand">Robotic Dog</a>
           <div class="flex flex-row items-center gap-5 mt-5 sm:justify-end sm:mt-0 sm:ps-5">
-            <a class="text-sm font-medium text-primary-active focus:outline-hidden" href="#home"
+            <a class="text-sm font-medium text-primary-active focus:outline-hidden" href="#"
               aria-current="page">Home</a>
             <a class="text-sm text-navbar-nav-foreground hover:text-primary-hover focus:outline-hidden focus:text-primary-focus"
               href="#features">Features</a>
             <a class="text-sm text-navbar-nav-foreground hover:text-primary-hover focus:outline-hidden focus:text-primary-focus"
               href="#components">Components</a>
             <a class="text-sm text-navbar-nav-foreground hover:text-primary-hover focus:outline-hidden focus:text-primary-focus"
-              href="#">Gallery</a>
+              href="#gallery">Gallery</a>
             <a class="text-sm text-navbar-nav-foreground hover:text-primary-hover focus:outline-hidden focus:text-primary-focus"
               href="#video">Video</a>
             <a class="text-sm text-navbar-nav-foreground hover:text-primary-hover focus:outline-hidden focus:text-primary-focus"
-              href="#">About</a>
+              href="#about">About</a>
           </div>
         </nav>
       </header>
     </div>
-    <div id="home" class="mt-7">
-      <div class="text-xl font-serif font-bold text-center md:text-3xl">
+    <div id="home" class="mt-7 relative w-full h-screen ">
+      <div class="   text-xl font-serif font-bold  md:text-3xl 
+      justify-center text-center inset-0 ">
         <h1>WELCOME TO OUR PROJECT <span id="element"></span> </h1>
 
       </div>
-    </div>
-    <div class="mt-9 size-100 mx-auto hover:scale-105 hover:shadow-white hover:shadow-2xl">
-      <img class="rounded-xl" src="./public/image/dog.jpg" alt="">
-    </div>
-    <div class="flex mt-20 justify-center gap-8 ">
-      <div  >
-     <a href="#features">
-       <button class="border px-4 py-2 rounded hover:scale-90 druation-200 transation-all font-serif bg-[#0c1821] border-[#0c1821]">
-        Explore
-      </button>
+     <video id="heroVideo" class="absolute w-full h-full object-cover object-center z-20" 
+     autoplay
+     muted
+     playsinline
+     src="public/videos/vd2.mp4"></video>
+
+     <a href="#about">
+      <button class="hero-btn opacity-0 border-black active:bg-blue-200 absolute z-40 bg-black px-6 py-4 rounded-xl
+     top-220  left-20 md:top-170 md:left-120"
+     >
+      Explore
+     </button>
      </a>
-    </div>
-    <div>
-     <div>
-       <a href="#video">
-        <button class="border px-4 py-2 rounded hover:scale-90 druation-200 transition-all font-serif bg-[#0c1821] border-[#0c1821]">
-        Watch Video
-      </button>
-       </a>
-     </div>
-    </div>
+     <a href="#video">
+       <button  class="hero-btn opacity-0 border-black active:bg-blue-200 absolute z-40 bg-black px-6 py-4 rounded-xl
+     top-220  right-20 md:top-170 md:right-120"
+    >
+      Watch Video
+     </button>
+     </a>
+      
     </div>
 
-    <hr class="mt-10">
+   
+        
+      
     
+
+  
+    <!-- <div class="mt-9 size-80 md:size-100 mx-auto hover:scale-105 hover:shadow-white hover:shadow-2xl active:scale-105
+    active:shadow-2xl active:shadow-white">
+      <img class="rounded-xl size-full" src="./public/image/dog.jpg" alt="">
+    </div> -->
+    
+
+    <hr class="mt-10">
+
     <section id="features" class="mt-4 container ">
 
       <div class="  p-6 md:px-50">
         <h1 class="text-2xl font-serif md:text-3xl">ROBOTIC DOG FEATURES</h1>
         <P class="text-xl font-serif  mt-4 md:text-2xl">What can our Robot Dog do?</P>
       </div>
-   <div class="px-6 md:px-50  ">
-    <div class="box opacity-0 border  px-6 py-6 rounded-4xl bg-[#4B79A1]">
-    <h1 class="text-xl font-bold md:text-2xl">Voice Control</h1>
-    <p class="pt-3 md:text-xl">Control the robotic dog using predefined voice commands through the SU-03T voice recognition module.</p>
-   </div>
-   <div class=" box opacity-0 mt-4 border  px-4 py-6 rounded-4xl bg-[#4B79A1]">
-    <h1  class="text-xl font-bold md:text-2xl">Live Camera Monitoring</h1>
-    <p class="pt-3 md:text-xl">ESP32-CAM provides real-time video monitoring through
-      a wireless network.
-    </p>
-   </div>
-   <div class=" box opacity-0 mt-4 border  px-4 py-6 rounded-4xl bg-[#4B79A1]">
-    <h1  class="text-xl font-bold md:text-2xl">Obstacle Detection</h1>
-    <p class="pt-3 md:text-xl ">The ultrasonic sensor detects obstacles and helps the robot avoid collisions.</p>
-   </div>
-   <div class="box opacity-0 mt-4 border  px-4 py-6 rounded-4xl bg-[#4B79A1]">
-    <h1  class="text-xl font-bold md:text-2xl">Smart Movement</h1>
-    <p class="pt-3 md:text-xl">Servo motors control the movement of the four legs, allowing the robot to walk and turn.</p>
-   </div>
-   
-   </div>
+      <div class="px-6 md:px-50  ">
+        <div class="box opacity-0 border  px-6 py-6 rounded-4xl bg-[#4B79A1]">
+          <h1 class="text-xl font-bold md:text-2xl">Voice Control</h1>
+          <p class="pt-3 md:text-xl">Control the robotic dog using predefined voice commands through the SU-03T voice
+            recognition module.</p>
+        </div>
+        <div class=" box opacity-0 mt-4 border  px-4 py-6 rounded-4xl bg-[#4B79A1]">
+          <h1 class="text-xl font-bold md:text-2xl">Live Camera Monitoring</h1>
+          <p class="pt-3 md:text-xl">ESP32-CAM provides real-time video monitoring through
+            a wireless network.
+          </p>
+        </div>
+        <div class=" box opacity-0 mt-4 border  px-4 py-6 rounded-4xl bg-[#4B79A1]">
+          <h1 class="text-xl font-bold md:text-2xl">Obstacle Detection</h1>
+          <p class="pt-3 md:text-xl ">The ultrasonic sensor detects obstacles and helps the robot avoid collisions.</p>
+        </div>
+        <div class="box opacity-0 mt-4 border  px-4 py-6 rounded-4xl bg-[#4B79A1]">
+          <h1 class="text-xl font-bold md:text-2xl">Smart Movement</h1>
+          <p class="pt-3 md:text-xl">Servo motors control the movement of the four legs, allowing the robot to walk and
+            turn.</p>
+        </div>
+
+      </div>
 
     </section>
 
     <hr class="mt-10">
-   
+
     <section id="components">
       <div class="mb-8 mt-5 md:mt-15 container md:px-30 px-10">
         <h1 class="text-2xl font-serif md:text-3xl">The Technology Behind the Robot Dog</h1>
@@ -116,8 +132,7 @@
       <div class=" container mx-auto grid grid-cols-1  md:gap-6  md:grid-cols-4">
 
         <div class="component-card opacity-0 bg-[#6c757d] mx-auto  w-80   rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100 px-6 py-6 shadow-sm  hover:scale-[1.02]
-        hover:shadow-2xl transition-all duration-300  hover:shadow-white"
-        data-delay="0">
+        hover:shadow-2xl transition-all duration-300  hover:shadow-white" data-delay="0">
           <figure class="h-48 md:h-60 overflow-hidden">
             <img class="h-full w-full object-fit rounded-xl" src="./images/esp.jpg" />
           </figure>
@@ -129,8 +144,7 @@
         </div>
 
         <div
-          class="component-card opacity-0 bg-[#6c757d] md:mt-0 rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100  mx-auto  w-80 mt-4 px-6 py-6  hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white"
-          >
+          class="component-card opacity-0 bg-[#6c757d] md:mt-0 rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100  mx-auto  w-80 mt-4 px-6 py-6  hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
           <figure class="h-48 md:h-60 overflow-hidden">
             <img class="h-full w-full object-fit rounded-xl " src="./images/images.jpg" />
           </figure>
@@ -141,8 +155,7 @@
         </div>
 
         <div
-          class="component-card opacity-0 bg-[#6c757d] rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100 mx-auto  w-80 mt-4  px-6 py-6    md:mt-0  hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white"
-         >
+          class="component-card opacity-0 bg-[#6c757d] rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100 mx-auto  w-80 mt-4  px-6 py-6    md:mt-0  hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
           <figure class="h-48 md:h-60 overflow-hidden">
             <img class="h-full w-full object-fit rounded-xl" src="./images/ult.jpg" />
           </figure>
@@ -153,8 +166,7 @@
           </div>
         </div>
         <div
-          class=" component-card opacity-0 bg-[#6c757d] rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100 mx-auto  w-80 mt-4  px-6 py-6   md:mt-0 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white"
-          >
+          class=" component-card opacity-0 bg-[#6c757d] rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100 mx-auto  w-80 mt-4  px-6 py-6   md:mt-0 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
           <figure class="h-48 md:h-60 overflow-hidden">
             <img class="h-full w-full object-fit rounded-xl" src="./images/driver.jpg" />
           </figure>
@@ -165,8 +177,7 @@
           </div>
         </div>
         <div
-          class="component-card opacity-0 bg-[#6c757d] rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100 mx-auto  w-80 mt-10  px-6 py-6   hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white"
-          >
+          class="component-card opacity-0 bg-[#6c757d] rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100 mx-auto  w-80 mt-10  px-6 py-6   hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
           <figure class="h-48 md:h-60 overflow-hidden">
             <img class="h-full w-full object-fit rounded-xl" src="./images/servo.jpg" />
           </figure>
@@ -177,8 +188,7 @@
           </div>
         </div>
         <div
-          class="component-card opacity-0 bg-[#6c757d] rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100 mx-auto  w-80   px-6 py-6 mt-10  hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white"
-          >
+          class="component-card opacity-0 bg-[#6c757d] rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100 mx-auto  w-80   px-6 py-6 mt-10  hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
           <figure class="h-48 md:h-60 overflow-hidden">
             <img class="h-full w-full object-fit rounded-xl" src="./images/su03T.jpg" />
           </figure>
@@ -190,8 +200,7 @@
         </div>
 
         <div
-          class="component-card opacity-0 bg-[#6c757d] rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100  mx-auto  w-80  px-6 py-6 mt-10 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white"
-          >
+          class="component-card opacity-0 bg-[#6c757d] rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100  mx-auto  w-80  px-6 py-6 mt-10 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
           <figure class="h-48 md:h-60 overflow-hidden">
             <img class="h-full w-full object-fit rounded-xl " src="./images/xl4016.jpg" />
 
@@ -204,8 +213,7 @@
           </div>
         </div>
         <div
-          class="component-card opacity-0 bg-[#6c757d] rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100  mx-auto  w-80   px-6 py-6 mt-10 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white"
-         >
+          class="component-card opacity-0 bg-[#6c757d] rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100  mx-auto  w-80   px-6 py-6 mt-10 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
           <figure class="h-48 md:h-60 overflow-hidden">
             <img class="h-full w-full object-fit rounded-xl " src="./images/lm25.jpg" />
 
@@ -223,19 +231,54 @@
       </div>
     </section>
     <hr class="mt-9 ">
-    <section>
+    <section id="gallery" class="mt-6">
+      <div class="mb-6 text-xl font-serif text-center md:text-3xl">
+        <h1>
+A Closer Look at Robotic Dog LOKI
+        </h1>
+      </div>
+
+      <div class="relative   md:w-[600px] md:h-[600px] w-[300px]
+       h-[400px] mx-auto">
+
+        <img id="galleryImage" src="./public/image/dog.jpg" class="absolute w-full h-full object-cover rounded-2xl" alt="">
+
+        <button id="preBtn" class="absolute  -left-16 top-1/2 border text-white rounded-xl px-4 py-2 hover:bg-black hover:border-black
+        active:bg-black active:border-black">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6 pointer-events-none">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+          </svg>
+
+        </button>
+        <button id="nextBtn" class="absolute -right-16 top-1/2 border rounded-xl px-4 py-2 hover:bg-black hover:border-black active:bg-black active:border-black">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6 pointer-events-none">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+
+        </button>
+
+      </div>
+
+
+
+
+
+
 
     </section>
     <hr class="mt-9 ">
-     <section>
-      
+    <section id="about">
+
       <div class="max-w-340 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   
+
         <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
           <h1 class="text-2xl font-serif mb-2 md:text-4xl">Our Team</h1>
-<p   class="text-xl font-serif md:text-3xl"> Meet the team behind <span id="element2" class="font-bold"></span></p>
+          <p class="text-xl font-serif md:text-3xl"> Meet the team behind <span id="element2" class="font-bold"></span>
+          </p>
         </div>
-       
+
         <div class="grid grid-cols-2 md:grid-cols-2 gap-8 md:gap-12">
           <div class="text-center h-48">
             <img class="rounded-xl sm:size-48 lg:size-60 mx-auto object-cover h-full w-full " src="./images/htet.jpg"
@@ -249,7 +292,7 @@
               </p>
             </div>
           </div>
-         
+
           <div class="text-center h-48">
             <img class="rounded-xl sm:size-48 lg:size-60 mx-auto h-full w-full" src="./images/khun.jpg" alt="Avatar">
             <div class="mt-2 sm:mt-4">
@@ -261,9 +304,10 @@
               </p>
             </div>
           </div>
-        
+
           <div class="text-center h-48 mt-10 md:mt-20">
-            <img class="rounded-xl sm:size-48 lg:size-60 mx-auto h-full w-full object-cover" src="./images/htwe.jpg" alt="Avatar">
+            <img class="rounded-xl sm:size-48 lg:size-60 mx-auto h-full w-full object-cover" src="./images/htwe.jpg"
+              alt="Avatar">
             <div class="mt-2 sm:mt-4">
               <h3 class="text-sm font-medium text-foreground sm:text-base lg:text-lg">
                 Mg Htwe Nadi Shain
@@ -273,9 +317,10 @@
               </p>
             </div>
           </div>
-         
+
           <div class="text-center h-48 mt-10 md:mt-20">
-            <img class="w-full h-full  rounded-xl sm:size-48 lg:size-60 mx-auto object-cover" src="./images/sai.jpg" alt="Avatar">
+            <img class="w-full h-full  rounded-xl sm:size-48 lg:size-60 mx-auto object-cover" src="./images/sai.jpg"
+              alt="Avatar">
             <div class="mt-2 sm:mt-4">
               <h3 class="text-sm font-medium text-foreground sm:text-base lg:text-lg">
                 Sai Phyo Htet Aung
