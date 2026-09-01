@@ -3,6 +3,6 @@ import { animateObserver, componentObserver, heroBtnObserver } from "./animate";
 const observer = () => {
 animateObserver();
 componentObserver();
- heroBtnObserver();
+heroBtnObserver();
 };
 export default observer ;

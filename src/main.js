@@ -11,6 +11,9 @@ import Typed from 'typed.js';
 const typed = new Typed('#element', {
   strings: ['ROBOTIC DOG NAME LUCKY'],
   typeSpeed: 50,
+  backSpeed: 100,
+ loop : true ,
+  loopCount: Infinity,
 });
 
 const typed2 = new Typed('#element2', {
