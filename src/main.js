@@ -9,12 +9,12 @@ import Typed from 'typed.js';
 
 
 const typed = new Typed('#element', {
-  strings: ['ROBOTIC DOG NAME LOKI'],
+  strings: ['ROBOTIC DOG NAME LUCKY'],
   typeSpeed: 50,
 });
 
 const typed2 = new Typed('#element2', {
-  strings: ['ROBOTIC DOG LOKI'],
+  strings: ['ROBOTIC DOG LUCKY'],
   typeSpeed: 50,
   backSpeed: 100,
  loop : true ,

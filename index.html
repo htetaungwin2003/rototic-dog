@@ -54,23 +54,23 @@
         <h1>WELCOME TO OUR PROJECT <span id="element"></span></h1>
 
       </div>
-     <video id="heroVideo" class="absolute w-full  h-full object-cover object-center z-20 " 
+     <video id="heroVideo" class="absolute w-full  h-full  object-cover  object-center z-20 " 
      autoplay
      muted
      playsinline
-     loop
-     src="public/videos/vd2.mp4"></video>
+     
+     src="public/videos/luckybark.mp4"></video>
 
      <a href="#about">
-      <button class="hero-btn opacity-0 border-black active:bg-[#3a86ff] absolute z-40 bg-black px-6 py-4 rounded-xl
-    top-160  left-15 md:top-150 md:left-120"
+      <button class="hero-btn opacity-0 border-black active:bg-[#3a86ff] absolute z-40 bg-black px-6 py-4 rounded-3xl
+    top-160  left-15 md:top-150 md:left-120 active:scale-110 hover:scale-90"
      >
       Explore
      </button>
      </a>
      <a href="#video">
-       <button  class="hero-btn opacity-0 border-black active:bg-[#3a86ff] absolute z-40 bg-black px-6 py-4 rounded-xl
-     top-160  right-15 md:top-150 md:right-120"
+       <button  class="hero-btn opacity-0 border-black active:bg-[#3a86ff] absolute z-40 bg-black px-6 py-4 rounded-3xl
+     top-160  right-15 md:top-150 md:right-120 active:scale-110 hover:scale-90"
     >
       Watch Video
      </button>
@@ -200,19 +200,7 @@
           </div>
         </div>
 
-        <div
-          class="component-card opacity-0 bg-[#6c757d] rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100  mx-auto  w-80  px-6 py-6 mt-10 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
-          <figure class="h-48 md:h-60 overflow-hidden">
-            <img class="h-full w-full object-fit rounded-xl " src="./images/xl4016.jpg" />
-
-
-          </figure>
-          <div class="card-body mt-3">
-            <h2 class="card-title text-2xl text-[#94A3B8]">XL-4016</h2>
-            <p>Provides stable and adjustable power to the robotic dog's electronic components.</p>
-
-          </div>
-        </div>
+      
         <div
           class="component-card opacity-0 bg-[#6c757d] rounded-2xl col-span-1 md:col-span-1  md:w-full card bg-base-100  mx-auto  w-80   px-6 py-6 mt-10 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300  hover:shadow-white">
           <figure class="h-48 md:h-60 overflow-hidden">
@@ -242,17 +230,17 @@ A Closer Look at Robotic Dog LOKI
       <div class="relative   md:w-[600px] md:h-[600px] w-[300px]
        h-[400px] mx-auto">
 
-        <img id="galleryImage" src="./public/image/dog.jpg" class="absolute w-full h-full object-cover rounded-2xl" alt="">
+        <img id="galleryImage" src="./public/image/1.png" class="absolute w-full h-full md:object-cover object-fit rounded-2xl" alt="">
 
         <button id="preBtn" class="absolute  -left-16 top-1/2 border text-white rounded-xl px-4 py-2 hover:bg-black hover:border-black
-        active:bg-black active:border-black">
+        active:bg-black active:border-black hover:scale-[1.1] active:scale-90">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-6 pointer-events-none">
             <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
           </svg>
 
         </button>
-        <button id="nextBtn" class="absolute -right-16 top-1/2 border rounded-xl px-4 py-2 hover:bg-black hover:border-black active:bg-black active:border-black">
+        <button id="nextBtn" class="hover:scale-[1.1] active:scale-90 absolute -right-16 top-1/2 border rounded-xl px-4 py-2 hover:bg-black hover:border-black active:bg-black active:border-black">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-6 pointer-events-none">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -270,14 +258,52 @@ A Closer Look at Robotic Dog LOKI
 
     </section>
     <hr class="mt-9 ">
-<section id="video" class="container mx-auto">
-<div class="grid md:grid-cols-2 h-100 px-6 gap-6">
-  <video class="col-span-1 w-full h-full object-cover object-left rounded-2xl" controls  src="./public/videos/h.mp4"></video>
-  <video class="col-span-1 w-full h-full object-cover rounded-2xl" controls  src="./public/videos/h.mp4"></video>
+<section id="video" class="container mx-auto mt-4">
+  <div class="px-6 mb-4 md:mb-6">
+    <h1 class="text-xl md:text-3xl font-serif mb-2">See <span class="font-bold">LUCKY</span> in Action</h1>
+    <p class="text-sm md:text-2xl font-serif mb-4">Watch our robotic dog perform movements , respond to voice commands, and interact with its environment.</p>
+    <p class="text-sm md:text-2xl font-serif">Say 'LUCKY' to wake up the robot, then give your command.</p>
+  </div>
+<div class="grid md:grid-cols-2 min-h-100 px-6 gap-10  item-start ">
+  <div class="col-span-1 mb-4 p-4">
+    <h1 class="text-xl md:text-2xl font-semibold mb-2 text-gray-100">Move Forward and Object detect </h1>
+    <video class=" w-full  h-full  object-cover object-left rounded-2xl hover:scale-95" controls  src="./public/videos/forward.mp4"></video>
+  </div>
+  <div class="col-span-1 mb-4 p-4">
+    <h1 class="text-xl md:text-2xl font-semibold mb-2 text-gray-100">BackWard  </h1>
+    <video class=" w-full  h-full  object-cover object-left rounded-2xl hover:scale-95" controls  src="./public/videos/back.mp4"></video>
+  </div>
+  <div class="col-span-1 mb-4 p-4">
+    <h1 class="text-xl md:text-2xl font-semibold mb-2 text-gray-100"> Turn Right</h1>
+    <video class="w-full h-full object-cover rounded-2xl hover:scale-95" controls  src="./public/videos/right.mp4"></video>
+  </div>
+  <div class="col-span-1 mb-4 p-4">
+    <h1 class="text-xl md:text-2xl font-semibold mb-2 text-gray-100"> Turn Left </h1>
+    <video class="w-full h-full object-cover rounded-2xl hover:scale-95" controls  src="./public/videos/left.mp4"></video>
+  </div>
+   <div class="col-span-1 mb-4 p-4">
+    <h1 class="text-xl md:text-2xl font-semibold mb-2 text-gray-100"> Active Camera => Live Stream => Face Check </h1>
+    <video class="w-full h-100 object-contain rounded-2xl hover:scale-95" controls  src="./public/videos/cam.mp4"></video>
+  </div>
+   <div class="col-span-1 mb-4 p-4">
+    <h1 class="text-xl md:text-2xl font-semibold mb-2 text-gray-100">Dancing  </h1>
+    <video class="w-full h-100 object-cover rounded-2xl hover:scale-95" controls  src="./public/videos/dance.mp4"></video>
+  </div>
+  <div class="col-span-1 mb-4 p-4">
+    <h1 class="text-xl md:text-2xl font-semibold mb-2 text-gray-100">Sitting </h1>
+    <video class="w-full h-full object-cover rounded-2xl hover:scale-95" controls  src="./public/videos/sit.mp4"></video>
+  </div>
+  <div class="col-span-1 mb-4 p-4">
+    <h1 class="text-xl md:text-2xl font-semibold mb-2 text-gray-100"> Bark </h1>
+    <video class="w-full h-full object-cover rounded-2xl hover:scale-95" controls  src="./public/videos/luckybark.mp4"></video>
+  </div>
+  <div class="col-span-1 mb-4 p-4">
+    <h1 class="text-xl md:text-2xl font-semibold mb-2 text-gray-100"> Hand </h1>
+    <video class="w-full h-full object-cover rounded-2xl hover:scale-95" controls  src="./public/videos/hand.mp4"></video>
+  </div>
 
 </div>
 </section>
- 
     <hr class="mt-9 ">
     <section id="about">
 
@@ -291,51 +317,51 @@ A Closer Look at Robotic Dog LOKI
 
         <div class="grid grid-cols-2 md:grid-cols-2 gap-8 md:gap-12">
           <div class="text-center h-48">
-            <img class="rounded-xl sm:size-48 lg:size-60 mx-auto object-cover h-full w-full " src="./images/htet.jpg"
+            <img class="rounded-xl sm:size-48 lg:size-60 mx-auto object-cover h-full w-full hover:scale-110 " src="./images/htet.jpg"
               alt="Avatar">
             <div class="mt-2 sm:mt-4">
-              <h3 class="text-sm font-medium text-foreground sm:text-base lg:text-lg">
+              <h3 class="text-sm font-medium text-foreground sm:text-base lg:text-lg font-serif">
                 Mg Htet Aung Win
               </h3>
-              <p class="text-xs text-muted-foreground-2 sm:text-sm lg:text-base">
+              <p class="text-xs text-muted-foreground-2 sm:text-sm lg:text-base ">
                 5EC-10
               </p>
             </div>
           </div>
 
           <div class="text-center h-48">
-            <img class="rounded-xl sm:size-48 lg:size-60 mx-auto h-full w-full" src="./images/khun.jpg" alt="Avatar">
+            <img class="rounded-xl sm:size-48 lg:size-60 mx-auto h-full w-full hover:scale-110 object-cover" src="./images/khun.jpg" alt="Avatar">
             <div class="mt-2 sm:mt-4">
-              <h3 class="text-sm font-medium text-foreground sm:text-base lg:text-lg">
+              <h3 class="text-sm font-medium text-foreground sm:text-base lg:text-lg font-serif">
                 Kun Wai Phyo
               </h3>
-              <p class="text-xs text-muted-foreground-2 sm:text-sm lg:text-base">
+              <p class="text-xs text-muted-foreground-2 sm:text-sm lg:text-base ">
                 5EC-15
               </p>
             </div>
           </div>
 
           <div class="text-center h-48 mt-10 md:mt-20">
-            <img class="rounded-xl sm:size-48 lg:size-60 mx-auto h-full w-full object-cover" src="./images/htwe.jpg"
+            <img class="rounded-xl sm:size-48 lg:size-60 mx-auto h-full w-full object-cover hover:scale-110" src="./images/htwe.jpg"
               alt="Avatar">
             <div class="mt-2 sm:mt-4">
-              <h3 class="text-sm font-medium text-foreground sm:text-base lg:text-lg">
-                Mg Htwe Nadi Shain
+              <h3 class="text-sm font-medium text-foreground sm:text-base lg:text-lg font-serif">
+                Mg Htwe Nadi Shane
               </h3>
-              <p class="text-xs text-muted-foreground-2 sm:text-sm lg:text-base">
+              <p class="text-xs text-muted-foreground-2 sm:text-sm lg:text-base ">
                 5EC-19
               </p>
             </div>
           </div>
 
           <div class="text-center h-48 mt-10 md:mt-20">
-            <img class="w-full h-full  rounded-xl sm:size-48 lg:size-60 mx-auto object-cover" src="./images/sai.jpg"
+            <img class="w-full h-full  rounded-xl sm:size-48 lg:size-60 mx-auto object-cover hover:scale-110" src="./images/sai.jpg"
               alt="Avatar">
             <div class="mt-2 sm:mt-4">
-              <h3 class="text-sm font-medium text-foreground sm:text-base lg:text-lg">
+              <h3 class="text-sm font-medium text-foreground sm:text-base lg:text-lg font-serif">
                 Sai Phyo Htet Aung
               </h3>
-              <p class="text-xs text-muted-foreground-2 sm:text-sm lg:text-base">
+              <p class="text-xs text-muted-foreground-2 sm:text-sm lg:text-base ">
                 5EC-21
               </p>
             </div>

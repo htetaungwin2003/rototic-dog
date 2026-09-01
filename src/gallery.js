@@ -1,9 +1,11 @@
 import { galleryImage } from "./selectors";
 
  const images =[
-"/image/Km.jpg",
-"/image/htwe.jpg",
-"/image/dog.jpg",
+"/image/2.png",
+"/image/5.png",
+"/image/1.png",
+"/image/4.png",
+"/image/3.png",
 
  ];
 

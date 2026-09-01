@@ -1,9 +1,9 @@
 import { heroVideo  } from "./selectors";
 
 const videos = [
-"/videos/videoplayback.mp4",
-"/videos/vd2.mp4",
-"/videos/htet.mp4"
+"/videos/forward.mp4",
+"/videos/left.mp4",
+"/videos/right.mp4"
 ];
 
 let currentVideo = 0 ;
